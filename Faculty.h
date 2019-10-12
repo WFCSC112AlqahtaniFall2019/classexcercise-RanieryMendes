@@ -7,31 +7,34 @@
 
 using namespace std;
 class Faculty{
-    Faculty();
-    Faculty (string name)
+
 
 public:
-    string name;
+
+    Faculty();
+    Faculty (string name, string address, string ID);
+
     string id;
     string address;
     string DoB;
     string degree;
+    string name;
 //getter and setter for salary
-    double getSalary() {return salary;}
+    double getSalary() ;
     void setSalary(double salary);
 /* 1) create a getter and setter for each variable in the class*/
     void setName (string userName);
-    string getName() {return name;}
+    string getName();
     void setID (string id);
-    string getID() {return id;}
+    string getID();
     void setAddress (string address);
-    string getAddress() {return address;}
+    string getAddress() ;
     void setDoB (string DoB);
-    string getDoB() {return DoB;}
+    string getDoB() ;
     void setDegree (string degree);
-    string getDegree() {return degree;}
+    string getDegree();
     void setSSN (double SSN);
-    double getSSN() {return SSN;}
+    double getSSN() ;
 
 private:
     double salary;
